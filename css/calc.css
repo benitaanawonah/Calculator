@@ -120,21 +120,21 @@ body {
 
 }
 
-.operator {
+[data-type="operator"] {
   background: var(--grey-500);
 }
 
-.operator:active {
+[data-type="operator"]:active {
   background-color: var(--grey-200);
 }
 
-.number {
+[data-type=number] {
   background: #fff;
 }
 
 
 
-.number:active {
+[data-type=number]:active {
   background-color: rgb(202, 177, 202);
 }
 
