@@ -68,39 +68,39 @@ body {
   "zero decimal clear equal";
 }
 
-.calculator-keys button {
+.calculator-keys > button {
   border: 0;
 
 }
 
-.one {
+[data-key="1"] {
   grid-area: one;
 }
-.two {
+[data-key="2"] {
   grid-area: two;
 }
-.three {
+[data-key="3"] {
   grid-area: three;
 }
-.four {
+[data-key="4"] {
   grid-area: four;
 }
-.five {
+[data-key="5"] {
   grid-area: five;
 }
-.six {
+[data-key="6"] {
   grid-area: six;
 }
-.seven {
+[data-key="7"] {
   grid-area: seven;
 }
-.eight {
+[data-key="8"] {
   grid-area: eight;
 }
-.nine {
+[data-key="9"] {
   grid-area: nine;
 }
-.zero {
+[data-key="0"] {
   grid-area: zero;
 }
 .decimal {
@@ -109,13 +109,13 @@ body {
 .clear {
   grid-area: clear;
 }
-.equal {
+[data-key="equal"] {
   grid-area: equal;
   background-color: rgb(202, 177, 202);
 }
 
 
-.equal:active {
+[data-type="equal"]:active {
   background-color: rgb(233, 222, 233);
 
 }
@@ -137,7 +137,16 @@ body {
 [data-type=number]:active {
   background-color: rgb(202, 177, 202);
 }
+[data-type="clear"] {
+  background: #fff;
+}
 
+[data-type="clear"]:active {
+  background: var(--grey-200);
+}
+[data-state="selected"] {
+  background: var(--grey-200);
+}
 
 
 
